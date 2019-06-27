@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F564893622C4872B0009BF1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F564893522C4872B0009BF1F /* AppDelegate.swift */; };
+		F564893822C4872B0009BF1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F564893722C4872B0009BF1F /* ViewController.swift */; };
+		F564893B22C4872B0009BF1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F564893922C4872B0009BF1F /* Main.storyboard */; };
+		F564893D22C4872D0009BF1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F564893C22C4872D0009BF1F /* Assets.xcassets */; };
+		F564894022C4872D0009BF1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F564893E22C4872D0009BF1F /* LaunchScreen.storyboard */; };
+		F564894B22C4872D0009BF1F /* NetSpiderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F564894A22C4872D0009BF1F /* NetSpiderTests.swift */; };
+		F564895622C4872D0009BF1F /* NetSpiderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F564895522C4872D0009BF1F /* NetSpiderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F564894722C4872D0009BF1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F564892A22C4872B0009BF1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F564893122C4872B0009BF1F;
+			remoteInfo = NetSpider;
+		};
+		F564895222C4872D0009BF1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F564892A22C4872B0009BF1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F564893122C4872B0009BF1F;
+			remoteInfo = NetSpider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F564893222C4872B0009BF1F /* NetSpider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetSpider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F564893522C4872B0009BF1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F564893722C4872B0009BF1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F564893A22C4872B0009BF1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F564893C22C4872D0009BF1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F564893F22C4872D0009BF1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F564894122C4872D0009BF1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F564894622C4872D0009BF1F /* NetSpiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetSpiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F564894A22C4872D0009BF1F /* NetSpiderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetSpiderTests.swift; sourceTree = "<group>"; };
+		F564894C22C4872D0009BF1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F564895122C4872D0009BF1F /* NetSpiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetSpiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F564895522C4872D0009BF1F /* NetSpiderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetSpiderUITests.swift; sourceTree = "<group>"; };
+		F564895722C4872D0009BF1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F564892F22C4872B0009BF1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F564894322C4872D0009BF1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F564894E22C4872D0009BF1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F564892922C4872B0009BF1F = {
+			isa = PBXGroup;
+			children = (
+				F564893422C4872B0009BF1F /* NetSpider */,
+				F564894922C4872D0009BF1F /* NetSpiderTests */,
+				F564895422C4872D0009BF1F /* NetSpiderUITests */,
+				F564893322C4872B0009BF1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F564893322C4872B0009BF1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F564893222C4872B0009BF1F /* NetSpider.app */,
+				F564894622C4872D0009BF1F /* NetSpiderTests.xctest */,
+				F564895122C4872D0009BF1F /* NetSpiderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F564893422C4872B0009BF1F /* NetSpider */ = {
+			isa = PBXGroup;
+			children = (
+				F564893522C4872B0009BF1F /* AppDelegate.swift */,
+				F564893722C4872B0009BF1F /* ViewController.swift */,
+				F564893922C4872B0009BF1F /* Main.storyboard */,
+				F564893C22C4872D0009BF1F /* Assets.xcassets */,
+				F564893E22C4872D0009BF1F /* LaunchScreen.storyboard */,
+				F564894122C4872D0009BF1F /* Info.plist */,
+			);
+			path = NetSpider;
+			sourceTree = "<group>";
+		};
+		F564894922C4872D0009BF1F /* NetSpiderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F564894A22C4872D0009BF1F /* NetSpiderTests.swift */,
+				F564894C22C4872D0009BF1F /* Info.plist */,
+			);
+			path = NetSpiderTests;
+			sourceTree = "<group>";
+		};
+		F564895422C4872D0009BF1F /* NetSpiderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F564895522C4872D0009BF1F /* NetSpiderUITests.swift */,
+				F564895722C4872D0009BF1F /* Info.plist */,
+			);
+			path = NetSpiderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F564893122C4872B0009BF1F /* NetSpider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F564895A22C4872D0009BF1F /* Build configuration list for PBXNativeTarget "NetSpider" */;
+			buildPhases = (
+				F564892E22C4872B0009BF1F /* Sources */,
+				F564892F22C4872B0009BF1F /* Frameworks */,
+				F564893022C4872B0009BF1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetSpider;
+			productName = NetSpider;
+			productReference = F564893222C4872B0009BF1F /* NetSpider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F564894522C4872D0009BF1F /* NetSpiderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F564895D22C4872D0009BF1F /* Build configuration list for PBXNativeTarget "NetSpiderTests" */;
+			buildPhases = (
+				F564894222C4872D0009BF1F /* Sources */,
+				F564894322C4872D0009BF1F /* Frameworks */,
+				F564894422C4872D0009BF1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F564894822C4872D0009BF1F /* PBXTargetDependency */,
+			);
+			name = NetSpiderTests;
+			productName = NetSpiderTests;
+			productReference = F564894622C4872D0009BF1F /* NetSpiderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F564895022C4872D0009BF1F /* NetSpiderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F564896022C4872D0009BF1F /* Build configuration list for PBXNativeTarget "NetSpiderUITests" */;
+			buildPhases = (
+				F564894D22C4872D0009BF1F /* Sources */,
+				F564894E22C4872D0009BF1F /* Frameworks */,
+				F564894F22C4872D0009BF1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F564895322C4872D0009BF1F /* PBXTargetDependency */,
+			);
+			name = NetSpiderUITests;
+			productName = NetSpiderUITests;
+			productReference = F564895122C4872D0009BF1F /* NetSpiderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F564892A22C4872B0009BF1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "薄海硕";
+				TargetAttributes = {
+					F564893122C4872B0009BF1F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					F564894522C4872D0009BF1F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F564893122C4872B0009BF1F;
+					};
+					F564895022C4872D0009BF1F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F564893122C4872B0009BF1F;
+					};
+				};
+			};
+			buildConfigurationList = F564892D22C4872B0009BF1F /* Build configuration list for PBXProject "NetSpider" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F564892922C4872B0009BF1F;
+			productRefGroup = F564893322C4872B0009BF1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F564893122C4872B0009BF1F /* NetSpider */,
+				F564894522C4872D0009BF1F /* NetSpiderTests */,
+				F564895022C4872D0009BF1F /* NetSpiderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F564893022C4872B0009BF1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F564894022C4872D0009BF1F /* LaunchScreen.storyboard in Resources */,
+				F564893D22C4872D0009BF1F /* Assets.xcassets in Resources */,
+				F564893B22C4872B0009BF1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F564894422C4872D0009BF1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F564894F22C4872D0009BF1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F564892E22C4872B0009BF1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F564893822C4872B0009BF1F /* ViewController.swift in Sources */,
+				F564893622C4872B0009BF1F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F564894222C4872D0009BF1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F564894B22C4872D0009BF1F /* NetSpiderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F564894D22C4872D0009BF1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F564895622C4872D0009BF1F /* NetSpiderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F564894822C4872D0009BF1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F564893122C4872B0009BF1F /* NetSpider */;
+			targetProxy = F564894722C4872D0009BF1F /* PBXContainerItemProxy */;
+		};
+		F564895322C4872D0009BF1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F564893122C4872B0009BF1F /* NetSpider */;
+			targetProxy = F564895222C4872D0009BF1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F564893922C4872B0009BF1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F564893A22C4872B0009BF1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F564893E22C4872D0009BF1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F564893F22C4872D0009BF1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F564895822C4872D0009BF1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F564895922C4872D0009BF1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F564895B22C4872D0009BF1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88Z477FWSW;
+				INFOPLIST_FILE = NetSpider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.studio.ios.framework.netspider.NetSpider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F564895C22C4872D0009BF1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88Z477FWSW;
+				INFOPLIST_FILE = NetSpider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.studio.ios.framework.netspider.NetSpider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F564895E22C4872D0009BF1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88Z477FWSW;
+				INFOPLIST_FILE = NetSpiderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.studio.ios.framework.netspider.NetSpiderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetSpider.app/NetSpider";
+			};
+			name = Debug;
+		};
+		F564895F22C4872D0009BF1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88Z477FWSW;
+				INFOPLIST_FILE = NetSpiderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.studio.ios.framework.netspider.NetSpiderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetSpider.app/NetSpider";
+			};
+			name = Release;
+		};
+		F564896122C4872D0009BF1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88Z477FWSW;
+				INFOPLIST_FILE = NetSpiderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.studio.ios.framework.netspider.NetSpiderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetSpider;
+			};
+			name = Debug;
+		};
+		F564896222C4872D0009BF1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88Z477FWSW;
+				INFOPLIST_FILE = NetSpiderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.studio.ios.framework.netspider.NetSpiderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetSpider;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F564892D22C4872B0009BF1F /* Build configuration list for PBXProject "NetSpider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F564895822C4872D0009BF1F /* Debug */,
+				F564895922C4872D0009BF1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F564895A22C4872D0009BF1F /* Build configuration list for PBXNativeTarget "NetSpider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F564895B22C4872D0009BF1F /* Debug */,
+				F564895C22C4872D0009BF1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F564895D22C4872D0009BF1F /* Build configuration list for PBXNativeTarget "NetSpiderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F564895E22C4872D0009BF1F /* Debug */,
+				F564895F22C4872D0009BF1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F564896022C4872D0009BF1F /* Build configuration list for PBXNativeTarget "NetSpiderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F564896122C4872D0009BF1F /* Debug */,
+				F564896222C4872D0009BF1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F564892A22C4872B0009BF1F /* Project object */;
+}
