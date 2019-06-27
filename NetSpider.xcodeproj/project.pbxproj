@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F564893622C4872B0009BF1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F564893522C4872B0009BF1F /* AppDelegate.swift */; };
-		F564893822C4872B0009BF1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F564893722C4872B0009BF1F /* ViewController.swift */; };
-		F564893B22C4872B0009BF1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F564893922C4872B0009BF1F /* Main.storyboard */; };
-		F564893D22C4872D0009BF1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F564893C22C4872D0009BF1F /* Assets.xcassets */; };
-		F564894022C4872D0009BF1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F564893E22C4872D0009BF1F /* LaunchScreen.storyboard */; };
+		F56F774622C491AA007653B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56F773E22C491AA007653B7 /* ViewController.swift */; };
+		F56F774722C491AA007653B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56F773F22C491AA007653B7 /* Assets.xcassets */; };
+		F56F774822C491AA007653B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56F774022C491AA007653B7 /* LaunchScreen.storyboard */; };
+		F56F774922C491AA007653B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56F774222C491AA007653B7 /* Main.storyboard */; };
+		F56F774A22C491AA007653B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56F774422C491AA007653B7 /* AppDelegate.swift */; };
 		FDD1B349F7CEE619E5D69060 /* Pods_NetSpider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D1DEF47F9EBB508AFB6319 /* Pods_NetSpider.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,12 +19,12 @@
 		A5D1DEF47F9EBB508AFB6319 /* Pods_NetSpider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetSpider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA74A7F9CFAFB5DD6AB1FED9 /* Pods-NetSpider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetSpider.release.xcconfig"; path = "Target Support Files/Pods-NetSpider/Pods-NetSpider.release.xcconfig"; sourceTree = "<group>"; };
 		F564893222C4872B0009BF1F /* NetSpider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetSpider.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F564893522C4872B0009BF1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F564893722C4872B0009BF1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F564893A22C4872B0009BF1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F564893C22C4872D0009BF1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F564893F22C4872D0009BF1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F564894122C4872D0009BF1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F56F773E22C491AA007653B7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F56F773F22C491AA007653B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F56F774122C491AA007653B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F56F774322C491AA007653B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F56F774422C491AA007653B7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F56F774D22C492DE007653B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F70C57E6E7F68B2233B8AC93 /* Pods-NetSpider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetSpider.debug.xcconfig"; path = "Target Support Files/Pods-NetSpider/Pods-NetSpider.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +60,8 @@
 		F564892922C4872B0009BF1F = {
 			isa = PBXGroup;
 			children = (
-				F564893422C4872B0009BF1F /* NetSpider */,
+				F56F773D22C491AA007653B7 /* sources */,
+				F56F774C22C492DE007653B7 /* support_files */,
 				F564893322C4872B0009BF1F /* Products */,
 				F266065E66733C8FCB1F3DAF /* Pods */,
 				63699083625C33A93658C23A /* Frameworks */,
@@ -75,17 +76,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F564893422C4872B0009BF1F /* NetSpider */ = {
+		F56F773D22C491AA007653B7 /* sources */ = {
 			isa = PBXGroup;
 			children = (
-				F564893522C4872B0009BF1F /* AppDelegate.swift */,
-				F564893722C4872B0009BF1F /* ViewController.swift */,
-				F564893922C4872B0009BF1F /* Main.storyboard */,
-				F564893C22C4872D0009BF1F /* Assets.xcassets */,
-				F564893E22C4872D0009BF1F /* LaunchScreen.storyboard */,
-				F564894122C4872D0009BF1F /* Info.plist */,
+				F56F774422C491AA007653B7 /* AppDelegate.swift */,
+				F56F773E22C491AA007653B7 /* ViewController.swift */,
+				F56F773F22C491AA007653B7 /* Assets.xcassets */,
+				F56F774022C491AA007653B7 /* LaunchScreen.storyboard */,
+				F56F774222C491AA007653B7 /* Main.storyboard */,
 			);
-			path = NetSpider;
+			path = sources;
+			sourceTree = "<group>";
+		};
+		F56F774C22C492DE007653B7 /* support_files */ = {
+			isa = PBXGroup;
+			children = (
+				F56F774D22C492DE007653B7 /* Info.plist */,
+			);
+			path = support_files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +156,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F564894022C4872D0009BF1F /* LaunchScreen.storyboard in Resources */,
-				F564893D22C4872D0009BF1F /* Assets.xcassets in Resources */,
-				F564893B22C4872B0009BF1F /* Main.storyboard in Resources */,
+				F56F774922C491AA007653B7 /* Main.storyboard in Resources */,
+				F56F774722C491AA007653B7 /* Assets.xcassets in Resources */,
+				F56F774822C491AA007653B7 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,28 +211,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F564893822C4872B0009BF1F /* ViewController.swift in Sources */,
-				F564893622C4872B0009BF1F /* AppDelegate.swift in Sources */,
+				F56F774A22C491AA007653B7 /* AppDelegate.swift in Sources */,
+				F56F774622C491AA007653B7 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F564893922C4872B0009BF1F /* Main.storyboard */ = {
+		F56F774022C491AA007653B7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F564893A22C4872B0009BF1F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F564893E22C4872D0009BF1F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F564893F22C4872D0009BF1F /* Base */,
+				F56F774122C491AA007653B7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F56F774222C491AA007653B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F56F774322C491AA007653B7 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -353,13 +361,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 88Z477FWSW;
-				INFOPLIST_FILE = NetSpider/Info.plist;
+				INFOPLIST_FILE = support_files/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ai.studio.ios.framework.netspider.NetSpider;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.studio.ios.framework.netspider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -373,13 +381,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 88Z477FWSW;
-				INFOPLIST_FILE = NetSpider/Info.plist;
+				INFOPLIST_FILE = support_files/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ai.studio.ios.framework.netspider.NetSpider;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.studio.ios.framework.netspider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
