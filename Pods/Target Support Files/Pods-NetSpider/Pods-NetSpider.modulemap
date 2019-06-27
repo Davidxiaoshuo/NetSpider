@@ -1,0 +1,6 @@
+framework module Pods_NetSpider {
+  umbrella header "Pods-NetSpider-umbrella.h"
+
+  export *
+  module * { export * }
+}
