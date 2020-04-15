@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F551E27422C731A700941B4D /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F551E27322C731A700941B4D /* ApiError.swift */; };
+		F551E27822C7435300941B4D /* SpiderLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F551E27722C7435300941B4D /* SpiderLogger.swift */; };
+		F551E27E22C9D78800941B4D /* SpiderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F551E27D22C9D78800941B4D /* SpiderProvider.swift */; };
+		F551E28122C9E58700941B4D /* SpiderParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F551E28022C9E58700941B4D /* SpiderParameters.swift */; };
+		F551E28422CA174700941B4D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F551E28322CA174700941B4D /* StringExtension.swift */; };
+		F551E28622CB2B2900941B4D /* SpiderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F551E28522CB2B2900941B4D /* SpiderRequest.swift */; };
 		F56F774622C491AA007653B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56F773E22C491AA007653B7 /* ViewController.swift */; };
 		F56F774722C491AA007653B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56F773F22C491AA007653B7 /* Assets.xcassets */; };
 		F56F774822C491AA007653B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56F774022C491AA007653B7 /* LaunchScreen.storyboard */; };
@@ -18,6 +24,12 @@
 /* Begin PBXFileReference section */
 		A5D1DEF47F9EBB508AFB6319 /* Pods_NetSpider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetSpider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA74A7F9CFAFB5DD6AB1FED9 /* Pods-NetSpider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetSpider.release.xcconfig"; path = "Target Support Files/Pods-NetSpider/Pods-NetSpider.release.xcconfig"; sourceTree = "<group>"; };
+		F551E27322C731A700941B4D /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		F551E27722C7435300941B4D /* SpiderLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiderLogger.swift; sourceTree = "<group>"; };
+		F551E27D22C9D78800941B4D /* SpiderProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiderProvider.swift; sourceTree = "<group>"; };
+		F551E28022C9E58700941B4D /* SpiderParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiderParameters.swift; sourceTree = "<group>"; };
+		F551E28322CA174700941B4D /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		F551E28522CB2B2900941B4D /* SpiderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiderRequest.swift; sourceTree = "<group>"; };
 		F564893222C4872B0009BF1F /* NetSpider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetSpider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56F773E22C491AA007653B7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F56F773F22C491AA007653B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +69,25 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F551E26F22C72A1400941B4D /* core */ = {
+			isa = PBXGroup;
+			children = (
+				F551E27322C731A700941B4D /* ApiError.swift */,
+				F551E27D22C9D78800941B4D /* SpiderProvider.swift */,
+				F551E28022C9E58700941B4D /* SpiderParameters.swift */,
+				F551E28522CB2B2900941B4D /* SpiderRequest.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		F551E28222CA171F00941B4D /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F551E28322CA174700941B4D /* StringExtension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		F564892922C4872B0009BF1F = {
 			isa = PBXGroup;
 			children = (
@@ -79,11 +110,14 @@
 		F56F773D22C491AA007653B7 /* sources */ = {
 			isa = PBXGroup;
 			children = (
+				F551E28222CA171F00941B4D /* extensions */,
+				F551E26F22C72A1400941B4D /* core */,
 				F56F774422C491AA007653B7 /* AppDelegate.swift */,
 				F56F773E22C491AA007653B7 /* ViewController.swift */,
 				F56F773F22C491AA007653B7 /* Assets.xcassets */,
 				F56F774022C491AA007653B7 /* LaunchScreen.storyboard */,
 				F56F774222C491AA007653B7 /* Main.storyboard */,
+				F551E27722C7435300941B4D /* SpiderLogger.swift */,
 			);
 			path = sources;
 			sourceTree = "<group>";
@@ -211,7 +245,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F551E27E22C9D78800941B4D /* SpiderProvider.swift in Sources */,
+				F551E28422CA174700941B4D /* StringExtension.swift in Sources */,
+				F551E27422C731A700941B4D /* ApiError.swift in Sources */,
+				F551E28122C9E58700941B4D /* SpiderParameters.swift in Sources */,
 				F56F774A22C491AA007653B7 /* AppDelegate.swift in Sources */,
+				F551E27822C7435300941B4D /* SpiderLogger.swift in Sources */,
+				F551E28622CB2B2900941B4D /* SpiderRequest.swift in Sources */,
 				F56F774622C491AA007653B7 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
