@@ -2,11 +2,12 @@
 //  AppDelegate.swift
 //  NetSpider
 //
-//  Created by David小硕 on 2019/6/27.
-//  Copyright © 2019 David小硕. All rights reserved.
+//  Created by David‘s Studio on 2019/6/27.
+//  Copyright © 2019 David‘s Studio. All rights reserved.
 //
 
 import UIKit
+import Bagel
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Bagel.start()
         return true
     }
 

@@ -7,29 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F551E27422C731A700941B4D /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F551E27322C731A700941B4D /* ApiError.swift */; };
+		F52DC50124AB3A250066D827 /* NetSpider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52DC50024AB3A250066D827 /* NetSpider.swift */; };
+		F52DC50624AB3C270066D827 /* NetSpiderDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52DC50524AB3C270066D827 /* NetSpiderDefine.swift */; };
+		F538DF19261AA27F00EBE1F2 /* CountDownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F538DF18261AA27F00EBE1F2 /* CountDownTimer.swift */; };
+		F53BDC39265BB49F00BF8619 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53BDC38265BB49F00BF8619 /* UILabelExtension.swift */; };
+		F53BDC3B265BC03100BF8619 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53BDC3A265BC03100BF8619 /* UITextFieldExtension.swift */; };
+		F54043652558D34F004ADEC5 /* RestfulNetworkTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54043622558D34F004ADEC5 /* RestfulNetworkTransport.swift */; };
+		F54043662558D34F004ADEC5 /* RestfulRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54043632558D34F004ADEC5 /* RestfulRequestBuilder.swift */; };
+		F54043672558D34F004ADEC5 /* RestfulClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54043642558D34F004ADEC5 /* RestfulClient.swift */; };
+		F540436B2558D768004ADEC5 /* GraphQLNetworkTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540436A2558D768004ADEC5 /* GraphQLNetworkTransport.swift */; };
 		F551E27822C7435300941B4D /* SpiderLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F551E27722C7435300941B4D /* SpiderLogger.swift */; };
-		F551E27E22C9D78800941B4D /* SpiderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F551E27D22C9D78800941B4D /* SpiderProvider.swift */; };
-		F551E28122C9E58700941B4D /* SpiderParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F551E28022C9E58700941B4D /* SpiderParameters.swift */; };
 		F551E28422CA174700941B4D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F551E28322CA174700941B4D /* StringExtension.swift */; };
-		F551E28622CB2B2900941B4D /* SpiderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F551E28522CB2B2900941B4D /* SpiderRequest.swift */; };
+		F561EE16255BD26D00F0AC62 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = F561EE14255BD26D00F0AC62 /* schema.json */; };
+		F561EE17255BD26D00F0AC62 /* sign_operator.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F561EE15255BD26D00F0AC62 /* sign_operator.graphql */; };
+		F561EE26255BD4C000F0AC62 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561EE25255BD4C000F0AC62 /* API.swift */; };
+		F561EE29255BD52E00F0AC62 /* CountryInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561EE28255BD52E00F0AC62 /* CountryInfoModel.swift */; };
+		F5645BE6255D04B000D9F722 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5645BE5255D04B000D9F722 /* RequestBuilder.swift */; };
+		F5645BF1255D1BDC00D9F722 /* RestfulConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5645BF0255D1BDC00D9F722 /* RestfulConfiguration.swift */; };
 		F56F774622C491AA007653B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56F773E22C491AA007653B7 /* ViewController.swift */; };
 		F56F774722C491AA007653B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56F773F22C491AA007653B7 /* Assets.xcassets */; };
 		F56F774822C491AA007653B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56F774022C491AA007653B7 /* LaunchScreen.storyboard */; };
 		F56F774922C491AA007653B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56F774222C491AA007653B7 /* Main.storyboard */; };
 		F56F774A22C491AA007653B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56F774422C491AA007653B7 /* AppDelegate.swift */; };
+		F58A7426255A188B00EDA05F /* NetConfigurationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58A7425255A188B00EDA05F /* NetConfigurationProtocol.swift */; };
+		F58A7429255A19A000EDA05F /* NetworkTransportProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58A7428255A19A000EDA05F /* NetworkTransportProtocol.swift */; };
+		F58A742F255A1CE200EDA05F /* GraphQLConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58A742E255A1CE200EDA05F /* GraphQLConfiguration.swift */; };
+		F58A743C255B698A00EDA05F /* GraphQLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58A743B255B698A00EDA05F /* GraphQLClient.swift */; };
+		F5A4E6EB24D10BBC009702B8 /* BaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4E6EA24D10BBC009702B8 /* BaseResponseModel.swift */; };
+		F5A4E6F824D39FD1009702B8 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4E6F724D39FD1009702B8 /* DictionaryExtension.swift */; };
+		F5A4E6FA24D3A88E009702B8 /* MusicsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4E6F924D3A88E009702B8 /* MusicsModel.swift */; };
+		F5E5A5B024AC2147004AE2F2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E5A5AF24AC2147004AE2F2 /* Request.swift */; };
+		F5E5A5B224AC216F004AE2F2 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E5A5B124AC216F004AE2F2 /* Response.swift */; };
+		F5F4D28A25D382D800B96D5F /* GraphQLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F4D28925D382D800B96D5F /* GraphQLRequest.swift */; };
+		F5F4D29925D3BE4D00B96D5F /* NetSpiderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F4D29825D3BE4D00B96D5F /* NetSpiderError.swift */; };
 		FDD1B349F7CEE619E5D69060 /* Pods_NetSpider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D1DEF47F9EBB508AFB6319 /* Pods_NetSpider.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A5D1DEF47F9EBB508AFB6319 /* Pods_NetSpider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetSpider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA74A7F9CFAFB5DD6AB1FED9 /* Pods-NetSpider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetSpider.release.xcconfig"; path = "Target Support Files/Pods-NetSpider/Pods-NetSpider.release.xcconfig"; sourceTree = "<group>"; };
-		F551E27322C731A700941B4D /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		F52DC50024AB3A250066D827 /* NetSpider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetSpider.swift; sourceTree = "<group>"; };
+		F52DC50524AB3C270066D827 /* NetSpiderDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetSpiderDefine.swift; sourceTree = "<group>"; };
+		F538DF18261AA27F00EBE1F2 /* CountDownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimer.swift; sourceTree = "<group>"; };
+		F53BDC38265BB49F00BF8619 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		F53BDC3A265BC03100BF8619 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		F54043622558D34F004ADEC5 /* RestfulNetworkTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestfulNetworkTransport.swift; sourceTree = "<group>"; };
+		F54043632558D34F004ADEC5 /* RestfulRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestfulRequestBuilder.swift; sourceTree = "<group>"; };
+		F54043642558D34F004ADEC5 /* RestfulClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestfulClient.swift; sourceTree = "<group>"; };
+		F540436A2558D768004ADEC5 /* GraphQLNetworkTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLNetworkTransport.swift; sourceTree = "<group>"; };
 		F551E27722C7435300941B4D /* SpiderLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiderLogger.swift; sourceTree = "<group>"; };
-		F551E27D22C9D78800941B4D /* SpiderProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiderProvider.swift; sourceTree = "<group>"; };
-		F551E28022C9E58700941B4D /* SpiderParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiderParameters.swift; sourceTree = "<group>"; };
 		F551E28322CA174700941B4D /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		F551E28522CB2B2900941B4D /* SpiderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiderRequest.swift; sourceTree = "<group>"; };
+		F561EE14255BD26D00F0AC62 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		F561EE15255BD26D00F0AC62 /* sign_operator.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sign_operator.graphql; sourceTree = "<group>"; };
+		F561EE25255BD4C000F0AC62 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		F561EE28255BD52E00F0AC62 /* CountryInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfoModel.swift; sourceTree = "<group>"; };
+		F5645BE5255D04B000D9F722 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		F5645BF0255D1BDC00D9F722 /* RestfulConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestfulConfiguration.swift; sourceTree = "<group>"; };
 		F564893222C4872B0009BF1F /* NetSpider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetSpider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56F773E22C491AA007653B7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F56F773F22C491AA007653B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +70,17 @@
 		F56F774322C491AA007653B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F56F774422C491AA007653B7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F56F774D22C492DE007653B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F58A7425255A188B00EDA05F /* NetConfigurationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetConfigurationProtocol.swift; sourceTree = "<group>"; };
+		F58A7428255A19A000EDA05F /* NetworkTransportProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTransportProtocol.swift; sourceTree = "<group>"; };
+		F58A742E255A1CE200EDA05F /* GraphQLConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLConfiguration.swift; sourceTree = "<group>"; };
+		F58A743B255B698A00EDA05F /* GraphQLClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLClient.swift; sourceTree = "<group>"; };
+		F5A4E6EA24D10BBC009702B8 /* BaseResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseModel.swift; sourceTree = "<group>"; };
+		F5A4E6F724D39FD1009702B8 /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		F5A4E6F924D3A88E009702B8 /* MusicsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicsModel.swift; sourceTree = "<group>"; };
+		F5E5A5AF24AC2147004AE2F2 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		F5E5A5B124AC216F004AE2F2 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		F5F4D28925D382D800B96D5F /* GraphQLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLRequest.swift; sourceTree = "<group>"; };
+		F5F4D29825D3BE4D00B96D5F /* NetSpiderError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetSpiderError.swift; sourceTree = "<group>"; };
 		F70C57E6E7F68B2233B8AC93 /* Pods-NetSpider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetSpider.debug.xcconfig"; path = "Target Support Files/Pods-NetSpider/Pods-NetSpider.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,13 +113,52 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F52DC50224AB3B4A0066D827 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F58A7425255A188B00EDA05F /* NetConfigurationProtocol.swift */,
+				F58A7428255A19A000EDA05F /* NetworkTransportProtocol.swift */,
+				F5645BE5255D04B000D9F722 /* RequestBuilder.swift */,
+			);
+			name = protocols;
+			path = sources/protocols;
+			sourceTree = SOURCE_ROOT;
+		};
+		F54043612558D34F004ADEC5 /* restful */ = {
+			isa = PBXGroup;
+			children = (
+				F5645BF0255D1BDC00D9F722 /* RestfulConfiguration.swift */,
+				F54043622558D34F004ADEC5 /* RestfulNetworkTransport.swift */,
+				F54043632558D34F004ADEC5 /* RestfulRequestBuilder.swift */,
+				F54043642558D34F004ADEC5 /* RestfulClient.swift */,
+			);
+			path = restful;
+			sourceTree = "<group>";
+		};
+		F54043692558D554004ADEC5 /* graphQL */ = {
+			isa = PBXGroup;
+			children = (
+				F58A742E255A1CE200EDA05F /* GraphQLConfiguration.swift */,
+				F540436A2558D768004ADEC5 /* GraphQLNetworkTransport.swift */,
+				F5F4D28925D382D800B96D5F /* GraphQLRequest.swift */,
+				F58A743B255B698A00EDA05F /* GraphQLClient.swift */,
+			);
+			path = graphQL;
+			sourceTree = "<group>";
+		};
 		F551E26F22C72A1400941B4D /* core */ = {
 			isa = PBXGroup;
 			children = (
-				F551E27322C731A700941B4D /* ApiError.swift */,
-				F551E27D22C9D78800941B4D /* SpiderProvider.swift */,
-				F551E28022C9E58700941B4D /* SpiderParameters.swift */,
-				F551E28522CB2B2900941B4D /* SpiderRequest.swift */,
+				F52DC50224AB3B4A0066D827 /* protocols */,
+				F54043612558D34F004ADEC5 /* restful */,
+				F54043692558D554004ADEC5 /* graphQL */,
+				F52DC50524AB3C270066D827 /* NetSpiderDefine.swift */,
+				F5F4D29825D3BE4D00B96D5F /* NetSpiderError.swift */,
+				F551E27722C7435300941B4D /* SpiderLogger.swift */,
+				F52DC50024AB3A250066D827 /* NetSpider.swift */,
+				F5E5A5AF24AC2147004AE2F2 /* Request.swift */,
+				F5E5A5B124AC216F004AE2F2 /* Response.swift */,
+				F5A4E6EA24D10BBC009702B8 /* BaseResponseModel.swift */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -84,13 +167,27 @@
 			isa = PBXGroup;
 			children = (
 				F551E28322CA174700941B4D /* StringExtension.swift */,
+				F5A4E6F724D39FD1009702B8 /* DictionaryExtension.swift */,
+				F53BDC38265BB49F00BF8619 /* UILabelExtension.swift */,
+				F53BDC3A265BC03100BF8619 /* UITextFieldExtension.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		F561EE01255BC52000F0AC62 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				F561EE25255BD4C000F0AC62 /* API.swift */,
+				F561EE14255BD26D00F0AC62 /* schema.json */,
+				F561EE15255BD26D00F0AC62 /* sign_operator.graphql */,
+			);
+			path = api;
 			sourceTree = "<group>";
 		};
 		F564892922C4872B0009BF1F = {
 			isa = PBXGroup;
 			children = (
+				F561EE01255BC52000F0AC62 /* api */,
 				F56F773D22C491AA007653B7 /* sources */,
 				F56F774C22C492DE007653B7 /* support_files */,
 				F564893322C4872B0009BF1F /* Products */,
@@ -117,7 +214,9 @@
 				F56F773F22C491AA007653B7 /* Assets.xcassets */,
 				F56F774022C491AA007653B7 /* LaunchScreen.storyboard */,
 				F56F774222C491AA007653B7 /* Main.storyboard */,
-				F551E27722C7435300941B4D /* SpiderLogger.swift */,
+				F5A4E6F924D3A88E009702B8 /* MusicsModel.swift */,
+				F561EE28255BD52E00F0AC62 /* CountryInfoModel.swift */,
+				F538DF18261AA27F00EBE1F2 /* CountDownTimer.swift */,
 			);
 			path = sources;
 			sourceTree = "<group>";
@@ -138,6 +237,7 @@
 			buildConfigurationList = F564895A22C4872D0009BF1F /* Build configuration list for PBXNativeTarget "NetSpider" */;
 			buildPhases = (
 				9AF8669B5AD7E23BB8C65D68 /* [CP] Check Pods Manifest.lock */,
+				F58A7449255BC32900EDA05F /* Generate Apollo GraphQL API */,
 				F564892E22C4872B0009BF1F /* Sources */,
 				F564892F22C4872B0009BF1F /* Frameworks */,
 				F564893022C4872B0009BF1F /* Resources */,
@@ -160,7 +260,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = "David小硕";
+				ORGANIZATIONNAME = "David硕";
 				TargetAttributes = {
 					F564893122C4872B0009BF1F = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -190,6 +290,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F561EE16255BD26D00F0AC62 /* schema.json in Resources */,
+				F561EE17255BD26D00F0AC62 /* sign_operator.graphql in Resources */,
 				F56F774922C491AA007653B7 /* Main.storyboard in Resources */,
 				F56F774722C491AA007653B7 /* Assets.xcassets in Resources */,
 				F56F774822C491AA007653B7 /* LaunchScreen.storyboard in Resources */,
@@ -238,6 +340,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetSpider/Pods-NetSpider-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F58A7449255BC32900EDA05F /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# 1. 直接从硬盘路径中删除 API.swift 可以让此脚本重新执行.\n# 2. 如果选择从 Xcode 中删除 API.swift, 请注意生成后,重新以源文件方式添加到项目中.\n\nAPOLLO_FRAMEWORK_PATH=\"${PODS_ROOT}/Apollo/scripts\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\n\ncd \"${SRCROOT}/api\"\n\n$APOLLO_FRAMEWORK_PATH/run-bundled-codegen.sh codegen:generate --target=swift --includes=./*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -245,13 +365,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F551E27E22C9D78800941B4D /* SpiderProvider.swift in Sources */,
+				F58A7429255A19A000EDA05F /* NetworkTransportProtocol.swift in Sources */,
+				F5A4E6EB24D10BBC009702B8 /* BaseResponseModel.swift in Sources */,
+				F561EE29255BD52E00F0AC62 /* CountryInfoModel.swift in Sources */,
 				F551E28422CA174700941B4D /* StringExtension.swift in Sources */,
-				F551E27422C731A700941B4D /* ApiError.swift in Sources */,
-				F551E28122C9E58700941B4D /* SpiderParameters.swift in Sources */,
+				F54043672558D34F004ADEC5 /* RestfulClient.swift in Sources */,
+				F5F4D28A25D382D800B96D5F /* GraphQLRequest.swift in Sources */,
+				F5F4D29925D3BE4D00B96D5F /* NetSpiderError.swift in Sources */,
+				F53BDC39265BB49F00BF8619 /* UILabelExtension.swift in Sources */,
+				F5E5A5B224AC216F004AE2F2 /* Response.swift in Sources */,
+				F53BDC3B265BC03100BF8619 /* UITextFieldExtension.swift in Sources */,
+				F54043652558D34F004ADEC5 /* RestfulNetworkTransport.swift in Sources */,
+				F5E5A5B024AC2147004AE2F2 /* Request.swift in Sources */,
+				F54043662558D34F004ADEC5 /* RestfulRequestBuilder.swift in Sources */,
+				F52DC50624AB3C270066D827 /* NetSpiderDefine.swift in Sources */,
 				F56F774A22C491AA007653B7 /* AppDelegate.swift in Sources */,
+				F52DC50124AB3A250066D827 /* NetSpider.swift in Sources */,
+				F58A742F255A1CE200EDA05F /* GraphQLConfiguration.swift in Sources */,
 				F551E27822C7435300941B4D /* SpiderLogger.swift in Sources */,
-				F551E28622CB2B2900941B4D /* SpiderRequest.swift in Sources */,
+				F5645BE6255D04B000D9F722 /* RequestBuilder.swift in Sources */,
+				F5A4E6F824D39FD1009702B8 /* DictionaryExtension.swift in Sources */,
+				F561EE26255BD4C000F0AC62 /* API.swift in Sources */,
+				F5645BF1255D1BDC00D9F722 /* RestfulConfiguration.swift in Sources */,
+				F5A4E6FA24D3A88E009702B8 /* MusicsModel.swift in Sources */,
+				F538DF19261AA27F00EBE1F2 /* CountDownTimer.swift in Sources */,
+				F58A7426255A188B00EDA05F /* NetConfigurationProtocol.swift in Sources */,
+				F540436B2558D768004ADEC5 /* GraphQLNetworkTransport.swift in Sources */,
+				F58A743C255B698A00EDA05F /* GraphQLClient.swift in Sources */,
 				F56F774622C491AA007653B7 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,9 +540,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 88Z477FWSW;
 				INFOPLIST_FILE = support_files/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,7 +563,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 88Z477FWSW;
 				INFOPLIST_FILE = support_files/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

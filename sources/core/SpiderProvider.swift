@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-public enum ApiPath: RawRepresentable {
+public enum Endpoint: RawRepresentable {
     
     public typealias RawValue = String
     
@@ -34,82 +34,91 @@ public enum ApiPath: RawRepresentable {
     
 }
 
-public struct Provider {
+public struct RestfulRequestProvider: ProviderProtocol {
     
-    public var endpoint: String
-    public var apiPath: ApiPath
+    public var httpProtocol: NetSpiderDefine.HttpProtocol = .restful
+    
+    public var endpoint: Endpoint
+    public var hostURL: String
     public var headers: HTTPHeaders?
+    public var method: NetSpiderDefine.HttpMethod
     public var parameterBoby: Parameters
     public var parameterEncoder: ParameterEncoding
     
-    init(endpoint: String,
-         apiPath: ApiPath,
+    init(hostURL: String,
+         endpoint: Endpoint,
+         method: NetSpiderDefine.HttpMethod,
          headers: HTTPHeaders?,
          parameterBoby: Parameters,
          parameterEncoder: ParameterEncoding) {
         self.endpoint = endpoint
-        self.apiPath = apiPath
+        self.hostURL = hostURL
+        self.method = method
         self.headers = headers
         self.parameterBoby = parameterBoby
         self.parameterEncoder = parameterEncoder
     }
 }
 
-public class SpiderProvider: NSObject {
+public class RestfulRequestBuilder: RequestBuilder {
     
-    private var endpoint: String?
-    private var apiPath: ApiPath?
+    public typealias Provider = RestfulRequestProvider
+    
+    private var hostURL: String?
+    private var endpoint: Endpoint?
+    private var method: NetSpiderDefine.HttpMethod = .get
     private var headers: HTTPHeaders?
     private var parameterBoby: Parameters?
     private var parameterEncoder: ParameterEncoding?
     
-    override init() {
-        super.init()
-    }
-    
-    init(endpoint: String,
-         apiPath: ApiPath,
+    init(hostURL: String,
+         endpoint: Endpoint,
+         method: NetSpiderDefine.HttpMethod,
          headers: HTTPHeaders?,
          parameterBoby: Parameters,
          parameterEncoder: ParameterEncoding) {
         self.endpoint = endpoint
-        self.apiPath = apiPath
+        self.hostURL = hostURL
         self.headers = headers
         self.parameterBoby = parameterBoby
         self.parameterEncoder = parameterEncoder
-        super.init()
     }
     
-    func withEndpoint(endpoint: String) -> SpiderProvider {
+    func with(endpoint: Endpoint) -> RestfulRequestBuilder {
         self.endpoint = endpoint
         return self
     }
     
-    func withApiPath(apiPath: ApiPath) -> SpiderProvider {
-        self.apiPath = apiPath
+    func with(hostURL: String) -> RestfulRequestBuilder {
+        self.hostURL = hostURL
         return self
     }
     
-    func withHeads(headers: HTTPHeaders) -> SpiderProvider {
+    func with(method: NetSpiderDefine.HttpMethod) -> RestfulRequestBuilder {
+        self.method = method
+        return self
+    }
+    
+    func with(headers: HTTPHeaders) -> RestfulRequestBuilder {
         self.headers = headers
         return self
     }
     
-    func withParameter(parameter: Parameters) -> SpiderProvider {
+    func with(parameter: Parameters) -> RestfulRequestBuilder {
         self.parameterBoby = parameter
         return self
     }
     
-    func withParameterEncoder(encoding: ParameterEncoding) -> SpiderProvider {
+    func with(encoding: ParameterEncoding) -> RestfulRequestBuilder {
         self.parameterEncoder = encoding
         return self
     }
     
-    func build() throws -> Provider {
-        guard let endpoint = self.endpoint, "" == endpoint else {
+    public func build() throws -> RestfulRequestProvider {
+        guard let hostURL = self.hostURL, "" == hostURL else {
             throw ApiError.__unknown((-10001, "provider's endpoint is nil"))
         }
-        guard let apiPath = self.apiPath else {
+        guard let endpoint = self.endpoint else {
             throw ApiError.__unknown((-10001, "provider's apiPath is nil"))
         }
         guard let params = parameterBoby else {
@@ -119,7 +128,14 @@ public class SpiderProvider: NSObject {
             throw ApiError.__unknown((-10001, "provider's parameterEncoder is nil"))
         }
         
-        return Provider.init(endpoint: endpoint, apiPath: apiPath, headers: headers, parameterBoby: params, parameterEncoder: encoding)
+        return RestfulRequestProvider.init(
+            hostURL: hostURL,
+            endpoint: endpoint,
+            method: method,
+            headers: headers,
+            parameterBoby: params,
+            parameterEncoder: encoding
+        )
     }
     
 }

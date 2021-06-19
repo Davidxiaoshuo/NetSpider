@@ -2,8 +2,8 @@
 //  StringExtension.swift
 //  NetSpider
 //
-//  Created by 薄海硕 on 2019/7/1.
-//  Copyright © 2019 David小硕. All rights reserved.
+//  Created by David硕 on 2019/7/1.
+//  Copyright © 2019 David‘s Studio. All rights reserved.
 //
 
 import Foundation
@@ -26,4 +26,19 @@ extension CharacterSet {
         
         return CharacterSet.urlQueryAllowed.subtracting(encodableDelimiters)
     }()
+}
+
+extension String {
+    
+    public func assembleURL(with other: String) -> URL? {
+        var host: String = self
+        if host.hasSuffix("/") {
+            host = String(host.dropLast())
+        }
+        var endpointValue = other
+        if !other.hasPrefix("/") {
+            endpointValue = "/" + endpointValue
+        }
+        return URL(string: host + endpointValue)
+    }
 }

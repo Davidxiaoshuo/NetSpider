@@ -1,16 +1,39 @@
 PODS:
   - Alamofire (4.8.2)
+  - Apollo (0.36.0):
+    - Apollo/Core (= 0.36.0)
+  - Apollo/Core (0.36.0)
+  - Bagel (1.4.0):
+    - CocoaAsyncSocket
+  - Cache (5.3.0)
+  - CocoaAsyncSocket (7.6.4)
+  - ObjectMapper (4.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8.2)
+  - Apollo (~> 0.36.0)
+  - Bagel (~> 1.4.0)
+  - Cache (~> 5.3.0)
+  - ObjectMapper (~> 4.2.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
+  trunk:
+    - Apollo
+    - Bagel
+    - Cache
+    - CocoaAsyncSocket
+    - ObjectMapper
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Apollo: a8dbf1a55e8860bfbe3e4274919721d102c85413
+  Bagel: c3fa6bcbd52db9ca976edbafd7638f0553ded101
+  Cache: 48762993ec44e1d93483c4d4a13edd18452326f4
+  CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
 
-PODFILE CHECKSUM: 904dc4b503590678e6b165c107a8e676e47980d4
+PODFILE CHECKSUM: f0a9f24d47b1e4b50792af2d6f20754fd8ba86ca
 
-COCOAPODS: 1.7.2
+COCOAPODS: 1.10.0

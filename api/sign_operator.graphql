@@ -1,0 +1,81 @@
+#checkCaptcha(region: Region!, name: String!, captcha: String!): BoolResult
+#检查验证码是否合法
+query checkCaptcha($region: Region!, $channelValue: String!, $captcha: String!) {
+  checkCaptcha(region: $region, name: $channelValue, captcha: $captcha) {
+    result
+  }
+}
+
+
+#countryList: [Country]
+#国家列表查询
+query countryList {
+  countryList {
+    region
+    name
+    diallingCode
+    weight
+  }
+}
+
+
+#defaultCountry(location: Location): Country
+#查询默认国家
+query defaultCountry($location: Location) {
+  defaultCountry(location: $location) {
+    region
+    name
+    diallingCode
+    weight
+  }
+}
+
+
+#registered(mobile: String!, region: Region!): BoolResult
+#验证 手机号 or email 是否注册过
+query isRegistered($channelValue: String!, $region: Region!) {
+  registered(mobile: $channelValue, region: $region) {
+    result
+  }
+}
+
+
+#resetPassword(region: Region!, name: String!, password: String!, captcha: String!): Token
+#忘记密码，重置密码操作 tokenType： ANONYMOUS -> 匿名用户； APP -> App用户； ROBOT -> 设备用户
+mutation resetPassword($region: Region!, $channelValue: String!, $password: String!, $captcha: String!) {
+  resetPassword(region: $region, name: $channelValue, password: $password, captcha: $captcha) {
+    token
+    tokenType
+  }
+}
+
+
+#sendCaptcha(region: Region!, name: String!, captchaType: CaptchaTypeEnum!): BoolResult
+#发送验证码 CaptchaTypeEnum： REGISTER -> 注册；RESET_PASSWORD -> 重置密码
+mutation sendCaptcha($region: Region!, $channelValue: String!, $captchaType: CaptchaTypeEnum!) {
+  sendCaptcha(region: $region, name: $channelValue, captchaType: $captchaType) {
+    result
+  }
+}
+
+
+#signIn(region: Region!, name: String!, password: String!): Token
+#登录 tokenType： ANONYMOUS -> 匿名用户； APP -> App用户； ROBOT -> 设备用户
+mutation signIn($region: Region!, $channelValue: String!, $password: String!) {
+  signIn(region: $region, name: $channelValue, password: $password) {
+    token
+    tokenType
+  }
+}
+
+
+#signUp(region: Region!, name: String!, password: String!, captcha: String!): Token
+#注册 tokenType： ANONYMOUS -> 匿名用户； APP -> App用户； ROBOT -> 设备用户
+mutation signUp($region: Region!, $channelValue: String!, $password: String!, $captcha: String!) {
+  signUp(region: $region, name: $channelValue, password: $password, captcha: $captcha) {
+    token
+    tokenType
+  }
+}
+
+
